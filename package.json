@@ -1,0 +1,23 @@
+{
+  "name": "code2text",
+  "version": "0.0.1",
+  "description": "Bundles code files matching a glob pattern into a single .txt file",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "bin": {
+    "text2code": "dist/cli.js"
+  },
+  "author": "Scott Larkin",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "@types/yargs": "^17.0.32",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+    "yargs": "^17.7.2"
+  }
+}
