@@ -1,6 +1,6 @@
 {
   "name": "code2text",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bundles code files matching a glob pattern into a single .txt file",
   "main": "index.js",
   "scripts": {
