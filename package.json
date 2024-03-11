@@ -7,7 +7,7 @@
     "build": "tsc"
   },
   "bin": {
-    "text2code": "dist/cli.js"
+    "code2text": "dist/cli.js"
   },
   "author": "Scott Larkin",
   "license": "ISC",

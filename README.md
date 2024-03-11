@@ -1,13 +1,13 @@
-# text2code
+# code2text
 
-text2code is a command-line tool that combines multiple text files into a single output file. It supports filtering files based on glob patterns and can optionally include the file path in the generated output.
+code2text is a command-line tool that combines multiple text files into a single output file. It supports filtering files based on glob patterns and can optionally include the file path in the generated output.
 
 ## Installation
 
-To install text2code, you need to have Node.js installed on your system. Once you have Node.js installed, you can install text2code globally using npm:
+To install code2text, you need to have Node.js installed on your system. Once you have Node.js installed, you can install code2text globally using npm:
 
 ```
-npm install -g text2code
+npm install -g code2text
 ```
 
 ## Usage
@@ -27,13 +27,11 @@ Options:
 To combine all TypeScript files in the current directory and its subdirectories, excluding any files in the `node_modules` and `test` directories, and write the output to a file named `out.txt`, you can run the following command:
 
 ```
-text2code -i "**/*.ts" -e "/node_modules/" -e "**/*.test.ts" -o out.txt
-
+code2text -i "**/*.ts" -e "/node_modules/" -e "**/*.test.ts" -o out.txt
 ```
 
 To include the file path in the output file, add the `-p` or `--include-path` option:
 
 ```
-text2code -i "**/*.ts" -e "/node_modules/" -e "**/*.test.ts" -o out.txt -p
-
+code2text -i "**/*.ts" -e "/node_modules/" -e "**/*.test.ts" -o out.txt -p
 ```

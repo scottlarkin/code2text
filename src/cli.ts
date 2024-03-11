@@ -5,7 +5,7 @@ import { processFiles } from "./processFiles";
 
 (async () => {
   const argv = await yargs
-    .usage("Usage: text2code [options]")
+    .usage("Usage: code2text [options]")
     .option("include", {
       alias: "i",
       description: "Glob patterns for files to include",
@@ -42,7 +42,7 @@ import { processFiles } from "./processFiles";
     .help("h")
     .alias("h", "help")
     .epilog(
-      'Example: bundle all typescript files, ignoring test files and anything in node_modules text2code: -i "**/*.ts" -o out.txt'
+      'Example: bundle all typescript files, ignoring test files and anything in node_modules code2text: -i "**/*.ts" -o out.txt'
     ).argv;
 
   const inputs = {
