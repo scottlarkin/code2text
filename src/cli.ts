@@ -35,7 +35,7 @@ import { processFiles } from "./processFiles";
     .option("verbose", {
       alias: "v",
       description:
-        "Enables verboes logging. Useful for debugging. Defaults to false",
+        "Enables verbose logging. Useful for debugging. Defaults to false",
       boolean: true,
       default: false,
     })
